@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer1', 'GTM-MSD6B27');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer2', 'GTM-WT6RC3K');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Duplicate GTM implementation POC</title>
+    <meta name="description" content="Example page demonstrating what happens when GTM is implemented using
+        two differently named data layers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>Hello world! Click anywhere and check the browser console. Only one GTM is going to be triggered depending on
+    which one executes first.</p>
+<p>Example page demonstrating what happens when GTM is implemented using
+    two differently named data layers.</p>
+<p>From Google's dev guide:</p>
+<blockquote cite="https://developers.google.com/tag-manager/devguide#multiple-containers">
+    <p>
+        "Note that you can use only a single common data layer for all Google Tag Manager containers on a page because
+        using more than one data layer can cause some triggers to stop working and could have other implications. So
+        don't rename the data layer for a subset of containers on the page. You can, if necessary, rename the data layer
+        for all containers on the page."
+    </p>
+</blockquote>
+<p>
+    More information can be found in
+    <cite>https://developers.google.com/tag-manager/devguide#multiple-containers</cite>
+</p>
+</body>
+</html>
